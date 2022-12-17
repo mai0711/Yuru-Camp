@@ -1,0 +1,103 @@
+html, body{
+    background-color: #333333;
+}
+
+#logo, h1, h5{
+    color: white;
+    margin: 0;
+    display: block;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+ul, li, nav{
+    display: inline; 
+}
+
+ul{
+    padding: 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    padding: 0 8px; 
+}
+
+a:hover{
+    color: orange;
+    background: white;
+}
+
+article{
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article:first-child{
+    background-image: url("https://images.unsplash.com/photo-1632367294096-4e77d53c4ae9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+button{
+    border:none;
+    padding:6px 8px;
+}
+
+p{
+    color: white;
+    text-align: center;
+}
+
+section{
+    min-height: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 16px;
+}
+
+section p{
+    color: #333333;
+}
+
+h6{
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+i{
+    font-size: 32px;
+}
+
+section:nth-child(2n){
+    background-color: orange;
+}
+
+
+@media screen and (max-width: 425px) {
+    header{
+        height: auto;
+        flex-direction: column;
+    }
+    ul, li, nav, a{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    a{
+        padding: 8px 0;
+    }
+}
